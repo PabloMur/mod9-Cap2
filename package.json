@@ -6,12 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next dev",
-    "build":"next build",
+    "build": "next build",
     "start": "next"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "next": "^13.2.3"
+    "next": "^13.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
