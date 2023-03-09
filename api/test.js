@@ -3,6 +3,6 @@ export default function handler(request, response) {
     body: request.body,
     query: request.query,
     cookies: request.cookies,
-    index: true,
+    test: true,
   });
 }
