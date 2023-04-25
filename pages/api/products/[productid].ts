@@ -1,13 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { send } from "micro";
-import { methods, get } from "micro-method-router";
+import { methods } from "micro-method-router";
 
-export default methods(
-  get(async (req, res) => {
-    const data = {
-      message:
-        "Este es un ejemplo de endpoint GET con micro-method-router y TypeScript",
-    };
-    send(res, 200, data);
-  })
-);
+export default methods({
+  async get(req: NextApiRequest, res: NextApiResponse) {
+    res.status(200).json("prod");
+  },
+});
