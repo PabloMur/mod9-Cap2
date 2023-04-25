@@ -14,17 +14,17 @@ import { methods } from "micro-method-router";
 // }
 
 export default methods({
-  async post(req: NextApiRequest, res: NextApiResponse) {
-    res
-      .status(200)
-      .send(
-        "Recibe un email y encuentra/crea un user con ese email y le envía un código vía email."
-      );
-  },
   async get(req: NextApiRequest, res: NextApiResponse) {
     res
       .status(200)
       .json(
+        "Recibe un email y encuentra/crea un user con ese email y le envía un código vía email."
+      );
+  },
+  async post(req: NextApiRequest, res: NextApiResponse) {
+    res
+      .status(200)
+      .send(
         "Recibe un email y encuentra/crea un user con ese email y le envía un código vía email."
       );
   },
