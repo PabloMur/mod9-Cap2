@@ -24,7 +24,7 @@ export default methods({
   async get(req: NextApiRequest, res: NextApiResponse) {
     res
       .status(200)
-      .send(
+      .json(
         "Recibe un email y encuentra/crea un user con ese email y le envía un código vía email."
       );
   },
