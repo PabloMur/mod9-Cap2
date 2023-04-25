@@ -21,4 +21,11 @@ export default methods({
         "Recibe un email y encuentra/crea un user con ese email y le envía un código vía email."
       );
   },
+  async get(req: NextApiRequest, res: NextApiResponse) {
+    res
+      .status(200)
+      .send(
+        "Recibe un email y encuentra/crea un user con ese email y le envía un código vía email."
+      );
+  },
 });
